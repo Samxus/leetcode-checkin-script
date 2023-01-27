@@ -9,7 +9,7 @@ if __name__ == '__main__':
     arguments = argparse.ArgumentParser()
     arguments.add_argument('--user_list', default='./data/user.yaml')
     arguments.add_argument('--record_output', default='test_record.yaml')
-    arguments.add_argument('--update_submission', default=False)
+    arguments.add_argument('--update_submission', default=True)
     arguments.add_argument('--check_range', default=3)
     arguments.add_argument('--absence_num', default=3)
     arguments.add_argument('--absence_type', default='continue')

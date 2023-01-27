@@ -13,7 +13,6 @@ def parse_one_submissions(user_name):
         '//div[@class="shadow-level3 dark:shadow-dark-level3 bg-layer-1 dark:bg-dark-layer-1 rounded-lg px-4 pt-4 pb-4"]//div[@class="flex flex-col"]')[
         0]
     submissions = submissions_col.xpath('./a')
-    print(submissions)
     return_list = []
     for sub in submissions:
         under_div = sub.xpath('./div')[0]
